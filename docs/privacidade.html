@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel do Carro: política de privacidade</title>
+<meta name="description" content="Política de privacidade do app Painel do Carro (OBD2). Privacy policy of the Painel do Carro app.">
+<style>
+  :root {
+    --fundo: #f7f7f5; --papel: #ffffff; --texto: #1d1f21; --suave: #5b6168; --linha: #e2e2de;
+    --destaque: #0b6e4f; --caixa: #eef6f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #131517; --papel: #1b1e21; --texto: #e7e9ea; --suave: #a3aab0; --linha: #2e3236;
+      --destaque: #5fd0a5; --caixa: #1d2a25;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--fundo); color: var(--texto);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav.idiomas { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+  nav.idiomas a {
+    padding: 6px 14px; border: 1px solid var(--linha); border-radius: 999px; background: var(--papel);
+    color: var(--texto); text-decoration: none; font-size: 14px;
+  }
+  nav.idiomas a:hover { border-color: var(--destaque); }
+  article { background: var(--papel); border: 1px solid var(--linha); border-radius: 12px; padding: 24px 20px; margin-bottom: 32px; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; padding-top: 4px; }
+  h3 { font-size: 16px; margin: 18px 0 6px; }
+  p, li { overflow-wrap: anywhere; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .versao { color: var(--suave); font-size: 14px; margin: 0 0 16px; }
+  .resumo { background: var(--caixa); border-left: 4px solid var(--destaque); border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+  .resumo p { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--linha); }
+  th { color: var(--suave); font-weight: 600; }
+  a { color: var(--destaque); }
+  footer { color: var(--suave); font-size: 13px; text-align: center; }
+  @media (max-width: 520px) {
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--linha); padding: 6px 0; }
+    td { border: 0; padding: 2px 0; }
+    td:first-child { font-weight: 600; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<nav class="idiomas" aria-label="Idioma / Language">
+  <a href="#pt" hreflang="pt-BR">Português</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+
+<!-- ============================================================ PORTUGUÊS -->
+<article id="pt" lang="pt-BR">
+<h1>Política de privacidade do Painel do Carro</h1>
+<p class="versao">Versão 3 · em vigor desde novembro de 2026</p>
+
+<div class="resumo">
+  <p><strong>Resumo:</strong> o Painel do Carro não tem conta, não tem propaganda e não usa nenhum serviço de análise ou de terceiros embutido no app. Tudo o que ele registra fica guardado no seu celular.</p>
+  <p><strong>Versão da Google Play:</strong> não tem permissão de internet. Nenhum dado sai do celular pelo app; só sai o arquivo que você mesmo escolher enviar.</p>
+  <p><strong>Versão baixada do GitHub:</strong> usa a internet para poucas coisas, todas explicadas abaixo (procurar atualização, preço da Tabela FIPE, altitude do terreno e a Cópia no PC, que só liga se você parear).</p>
+</div>
+
+<h2>1. Quem é o responsável</h2>
+<p>O Painel do Carro é feito por um desenvolvedor independente. Para qualquer dúvida sobre privacidade ou para exercer seus direitos, abra um pedido em <a href="https://github.com/CODantas/painel-carro-versoes/issues">github.com/CODantas/painel-carro-versoes/issues</a>. Os pedidos ali são públicos: não escreva placa, nome nem outros dados pessoais. Se o assunto precisar de sigilo, peça um contato privado no pedido e combinamos por lá.</p>
+
+<h2>2. O que o app faz</h2>
+<p>O app conversa, pelo Bluetooth do celular, com um adaptador OBD2 (tipo ELM327) ligado na tomada de diagnóstico do carro. Com o que o carro informa, mostra velocidade, rotação, temperatura, bateria e consumo, lê códigos de defeito, faz o laudo de compra de usado e guarda percursos, abastecimentos e manutenções. É uma ferramenta de triagem: não substitui o mecânico.</p>
+
+<h2>3. O que fica guardado no celular</h2>
+<p>Tudo abaixo fica na área privada do app, que outros apps não conseguem ler. O app desliga o backup automático do Android (<em>allowBackup</em> desligado): esses dados não vão para a nuvem do Google.</p>
+<ul>
+  <li><strong>Leituras do carro:</strong> percursos (início, fim, km, consumo, subidas e descidas), as leituras do motor durante os percursos (com a posição e a altitude, só se você permitir a localização), avisos, códigos de defeito, laudos e abastecimentos. Ficam num banco de dados SQLite dentro do app.</li>
+  <li><strong>Garagem:</strong> placa, apelido, modelo, ano, combustível, quilometragem e o chassi (quando o carro informa).</li>
+  <li><strong>Foto do carro (opcional):</strong> se você escolher uma foto da galeria ou tirar uma com a câmera, o app guarda uma cópia reduzida (até 1024 pixels) dentro dele. A foto é gravada de novo pelo app, sem os dados escondidos do arquivo original (como a localização em que foi tirada). O app não pede permissão de câmera nem de fotos: o seletor do Android entrega só a foto que você escolheu.</li>
+  <li><strong>Agenda de manutenção e contatos rápidos:</strong> nome e telefone que você digita (mecânico, seguro, guincho). O app não lê a lista de contatos do celular.</li>
+  <li><strong>Preferências:</strong> o endereço Bluetooth do adaptador, as escolhas de tela, a viagem atual e o ajuste de consumo.</li>
+  <li><strong>Diário de erros:</strong> o que o app fez e os erros que aconteceram, para corrigir problemas. Não leva placa, contatos nem o chassi inteiro (só os 4 últimos caracteres).</li>
+</ul>
+
+<h2>4. Bluetooth</h2>
+<p>O Bluetooth serve só para conversar com o adaptador OBD2 do carro. O app guarda o endereço do adaptador escolhido para reconectar sozinho. A busca por adaptadores (quando você toca em Procurar) não é usada para saber onde você está nem para rastrear outros aparelhos. No Android 11 e anteriores, o próprio Android exige a permissão de localização para procurar adaptadores Bluetooth de baixo consumo (BLE); nesse caso ela é pedida só na hora da busca, e o app não usa a sua posição para isso.</p>
+
+<h2>5. Localização (opcional)</h2>
+<ul>
+  <li><strong>Para que serve:</strong> medir as subidas e descidas de cada percurso e separar o consumo e o esforço do motor no plano, na subida e na descida.</li>
+  <li><strong>Quando:</strong> só enquanto o app está lendo o carro, e só se você tocar em Permitir e der a localização precisa "durante o uso". O app não pede localização "o tempo todo" (em segundo plano). Se a leitura voltar sozinha (celular reiniciado, carro ligado com o app fechado), a localização só volta quando você abrir o app.</li>
+  <li><strong>O que usa:</strong> o GPS e, se o celular tiver, o barômetro (sensor de pressão do ar).</li>
+  <li><strong>Onde fica:</strong> no celular, junto com as leituras do motor.</li>
+  <li><strong>Sem localização:</strong> o app funciona igual, só não mostra subidas, descidas e o consumo por relevo. Você pode tirar a permissão quando quiser nos ajustes do Android.</li>
+</ul>
+
+<h2>6. O que sai do celular, e só quando você manda</h2>
+<p>Nestes casos o app monta um arquivo e abre o menu de compartilhar do Android (ou a tela de "salvar como"). É você quem escolhe para onde vai: WhatsApp, e-mail, Drive, Downloads. O app não envia nada sozinho.</p>
+<ul>
+  <li><strong>Exportar dados (ZIP com planilhas):</strong> percursos, leituras, avisos, abastecimentos, manutenções e os carros da garagem (com placa e chassi). Leva a posição e a altitude das leituras, se você permitiu a localização. Os contatos rápidos e a foto do carro não vão.</li>
+  <li><strong>Laudo em PDF:</strong> o carro, a quilometragem que você digitou e o que o carro informou.</li>
+  <li><strong>Laudo para a oficina (PDF):</strong> o modelo, a placa, a quilometragem, os códigos de defeito e os números dos últimos percursos do carro atual.</li>
+  <li><strong>Relatório de erros:</strong> o diário de erros, em texto.</li>
+  <li><strong>Cópia de segurança (ZIP):</strong> leva tudo o que o app guarda, inclusive placas, chassi, posições, agenda, contatos rápidos e as fotos dos carros, para você restaurar em outro celular. O arquivo não tem senha: guarde em lugar seguro.</li>
+  <li><strong>Agenda do celular, discador e WhatsApp:</strong> o app só abre o outro app já preenchido (um lembrete, um número). Quem confirma é você.</li>
+</ul>
+
+<h2>7. Internet</h2>
+<h3>Versão da Google Play</h3>
+<p>Não tem permissão de internet. O app não consegue mandar nada para nenhum servidor. A Tabela FIPE usa só o catálogo de modelos que vem dentro do app, e as atualizações chegam pela própria Google Play.</p>
+<h3>Versão baixada do GitHub</h3>
+<p>Usa a internet só para o que está abaixo. Em todos os casos, como em qualquer acesso à internet, o serviço consultado vê o endereço de internet (IP) do celular.</p>
+<table>
+  <thead><tr><th>Para quê</th><th>Para onde</th><th>O que vai</th></tr></thead>
+  <tbody>
+    <tr><td>Procurar e baixar versão nova</td><td>GitHub (github.com)</td><td>Nada seu nem do carro. No máximo uma vez por dia, ou quando você toca em Procurar atualização.</td></tr>
+    <tr><td>Preço da Tabela FIPE</td><td>API pública da FIPE em parallelum.com.br</td><td>Só os códigos FIPE da marca, do modelo e do ano que você escolheu. Nada da placa nem da pessoa.</td></tr>
+    <tr><td>Altitude do terreno (com a localização ligada)</td><td>Open-Meteo (open-meteo.com)</td><td>Latitude e longitude arredondadas (cerca de 100 metros) do lugar onde o carro está e de alguns pontos à frente. Nada da placa, do carro nem da conta.</td></tr>
+    <tr><td>Cópia no PC (desligada até você parear)</td><td>O seu próprio computador, pelo app Terminal Móvel, na rede privada Tailscale, com HTTPS</td><td>Depois de cada percurso: o histórico (percursos, leituras com posição, avisos, códigos, laudos, abastecimentos, manutenções, garagem com placa e chassi, agenda e diário de erros). Os contatos rápidos e as fotos não vão. Não passa por servidor do desenvolvedor. Desligar fica em Mais → Seus dados, com a opção de apagar a cópia no computador.</td></tr>
+  </tbody>
+</table>
+
+<h2>8. O que o app não faz</h2>
+<ul>
+  <li>Não mostra anúncios e não tem nenhuma biblioteca de propaganda, de análise de uso ou de relatório de falhas de terceiros.</li>
+  <li>Não pede conta, login nem a sua conta Google.</li>
+  <li>Não lê os contatos, as fotos, as mensagens, o microfone nem a câmera do celular por conta própria.</li>
+  <li>Não usa o ID de publicidade nem identificadores do aparelho.</li>
+  <li>Não vende nem empresta dados a ninguém. O desenvolvedor não recebe dados do app.</li>
+</ul>
+<p>Se o app travar e você tiver aceitado mandar diagnósticos ao Google nas configurações do Android, o Google pode enviar ao desenvolvedor um relatório técnico do travamento (sem dados do carro), pelo Google Play Console. Isso é do Android, regido pela política de privacidade do Google, e pode ser desligado nas configurações do celular.</p>
+
+<h2>9. Permissões que o app pede</h2>
+<ul>
+  <li><strong>Dispositivos por perto (Bluetooth):</strong> para conversar com o adaptador e, quando você toca em Procurar, achar adaptadores sem fio (item 4).</li>
+  <li><strong>Notificações:</strong> para a notificação fixa enquanto o app está ligado ao carro e para os avisos importantes (motor quente, bateria fraca).</li>
+  <li><strong>Localização precisa, só durante o uso (opcional):</strong> para medir subidas e descidas (item 5).</li>
+  <li><strong>Alarmes e lembretes, iniciar com o celular (opcional):</strong> para reconectar sozinho quando você liga o carro, se você deixar a "conexão sempre ativa".</li>
+  <li><strong>Sem restrição de bateria (opcional):</strong> para o celular não fechar o app enquanto espera o carro.</li>
+</ul>
+
+<h2>10. Por quanto tempo</h2>
+<p>As leituras do motor (com a posição e a altitude) com mais de 1 ano são apagadas sozinhas. O resto fica até você apagar.</p>
+
+<h2>11. Seus direitos (LGPD)</h2>
+<ul>
+  <li><strong>Ver e levar seus dados:</strong> use Exportar dados ou Cópia de segurança.</li>
+  <li><strong>Apagar tudo:</strong> Mais → Seus dados → Apagar todos os meus dados. Apaga o banco, as preferências, as fotos, os arquivos gerados e o diário (e a Cópia no PC, se estiver ligada). Desinstalar o app também apaga tudo o que ele guardou no celular. O que você já mandou para fora (WhatsApp, Drive) fica com você.</li>
+  <li>Como os dados não saem do celular, o desenvolvedor não tem cópia deles e não consegue ver, corrigir ou apagar nada por você. Mesmo assim, responde a qualquer pedido pelo e-mail acima.</li>
+</ul>
+
+<h2>12. Crianças</h2>
+<p>O app é feito para motoristas adultos e não é dirigido a menores de 18 anos.</p>
+
+<h2>13. Mudanças nesta política</h2>
+<p>Se esta política mudar, a nova versão é publicada nesta página com a data, e o app mostra o texto novo e pede um novo aceite.</p>
+
+<h2>14. Contato</h2>
+<p><a href="https://github.com/CODantas/painel-carro-versoes/issues">github.com/CODantas/painel-carro-versoes/issues</a></p>
+</article>
+
+<!-- ============================================================ ENGLISH -->
+<article id="en" lang="en">
+<h1>Painel do Carro privacy policy</h1>
+<p class="versao">Version 3 · effective November 2026</p>
+
+<div class="resumo">
+  <p><strong>Summary:</strong> Painel do Carro has no account, no ads and no built-in analytics or third-party services. Everything it records stays on your phone.</p>
+  <p><strong>Google Play version:</strong> it has no internet permission. No data leaves the phone through the app; only a file you choose to send yourself.</p>
+  <p><strong>Version downloaded from GitHub:</strong> uses the internet for a few things, all explained below (checking for updates, FIPE price table, terrain elevation, and the PC Copy, which only turns on if you pair it).</p>
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>Painel do Carro is made by an independent developer. For any privacy question or to exercise your rights, open an issue at <a href="https://github.com/CODantas/painel-carro-versoes/issues">github.com/CODantas/painel-carro-versoes/issues</a>. Issues there are public: do not write your plate, name or other personal data. If the matter needs privacy, ask for a private contact in the issue and we will arrange it there.</p>
+
+<h2>2. What the app does</h2>
+<p>The app talks over the phone's Bluetooth to an OBD2 adapter (ELM327 type) plugged into the car's diagnostic port. With what the car reports, it shows speed, RPM, temperature, battery and fuel use, reads trouble codes, makes a used-car inspection report and keeps trips, refuelings and maintenance. It is a screening tool: it does not replace a mechanic.</p>
+
+<h2>3. What is stored on the phone</h2>
+<p>Everything below stays in the app's private storage, which other apps cannot read. The app turns off Android's automatic backup (<em>allowBackup</em> off): this data does not go to Google's cloud.</p>
+<ul>
+  <li><strong>Car readings:</strong> trips (start, end, distance, fuel use, climbs and descents), engine readings during trips (with position and altitude, only if you allow location), warnings, trouble codes, reports and refuelings. Stored in an SQLite database inside the app.</li>
+  <li><strong>Garage:</strong> license plate, nickname, model, year, fuel, mileage and VIN (when the car reports it).</li>
+  <li><strong>Car photo (optional):</strong> if you pick a photo from the gallery or take one with the camera, the app keeps a reduced copy (up to 1024 pixels) inside the app. The photo is re-encoded by the app, without the hidden data of the original file (such as where it was taken). The app does not ask for camera or photo permissions: the Android picker hands over only the photo you chose.</li>
+  <li><strong>Maintenance schedule and quick contacts:</strong> name and phone number you type (mechanic, insurance, tow truck). The app does not read the phone's contact list.</li>
+  <li><strong>Preferences:</strong> the adapter's Bluetooth address, screen choices, the current trip and the fuel-use adjustment.</li>
+  <li><strong>Error log:</strong> what the app did and the errors that happened, to fix problems. It does not include plates, contacts or the full VIN (only the last 4 characters).</li>
+</ul>
+
+<h2>4. Bluetooth</h2>
+<p>Bluetooth is used only to talk to the car's OBD2 adapter. The app stores the chosen adapter's address to reconnect on its own. Scanning for adapters (when you tap Search) is not used to find out where you are or to track other devices. On Android 11 and older, Android itself requires the location permission to scan for Bluetooth Low Energy (BLE) adapters; in that case it is asked only when you search, and the app does not use your position for it.</p>
+
+<h2>5. Location (optional)</h2>
+<ul>
+  <li><strong>What for:</strong> measuring the climbs and descents of each trip and separating fuel use and engine load on flat ground, uphill and downhill.</li>
+  <li><strong>When:</strong> only while the app is reading the car, and only if you tap Allow and grant precise location "while using the app". The app does not ask for "all the time" (background) location. If reading resumes on its own (phone restarted, car started with the app closed), location only resumes when you open the app.</li>
+  <li><strong>What it uses:</strong> GPS and, if the phone has one, the barometer (air pressure sensor).</li>
+  <li><strong>Where it stays:</strong> on the phone, with the engine readings.</li>
+  <li><strong>Without location:</strong> the app works the same; it just does not show climbs, descents and fuel use by terrain. You can remove the permission at any time in Android settings.</li>
+</ul>
+
+<h2>6. What leaves the phone, and only when you send it</h2>
+<p>In these cases the app builds a file and opens Android's share menu (or a "save as" screen). You choose where it goes: WhatsApp, email, Drive, Downloads. The app sends nothing on its own.</p>
+<ul>
+  <li><strong>Export data (ZIP of spreadsheets):</strong> trips, readings, warnings, refuelings, maintenance and the garage cars (with plate and VIN). It includes the position and altitude of readings if you allowed location. Quick contacts and the car photo are not included.</li>
+  <li><strong>PDF report:</strong> the car, the mileage you typed and what the car reported.</li>
+  <li><strong>Report for the repair shop (PDF):</strong> the model, the license plate, the mileage, the trouble codes and the figures from the current car's latest trips.</li>
+  <li><strong>Error report:</strong> the error log, as text.</li>
+  <li><strong>Backup (ZIP):</strong> everything the app stores, including plates, VIN, positions, schedule, quick contacts and car photos, so you can restore it on another phone. The file has no password: keep it somewhere safe.</li>
+  <li><strong>Phone calendar, dialer and WhatsApp:</strong> the app only opens the other app pre-filled (a reminder, a number). You confirm.</li>
+</ul>
+
+<h2>7. Internet</h2>
+<h3>Google Play version</h3>
+<p>It has no internet permission. The app cannot send anything to any server. The FIPE table uses only the model catalog shipped inside the app, and updates come through Google Play itself.</p>
+<h3>Version downloaded from GitHub</h3>
+<p>It uses the internet only for what is listed below. In every case, as with any internet access, the service contacted sees the phone's internet (IP) address.</p>
+<table>
+  <thead><tr><th>What for</th><th>Where to</th><th>What is sent</th></tr></thead>
+  <tbody>
+    <tr><td>Check for and download a new version</td><td>GitHub (github.com)</td><td>Nothing about you or the car. At most once a day, or when you tap Check for update.</td></tr>
+    <tr><td>FIPE table price</td><td>Public FIPE API at parallelum.com.br</td><td>Only the FIPE codes of the make, model and year you chose. Nothing about the plate or the person.</td></tr>
+    <tr><td>Terrain elevation (with location on)</td><td>Open-Meteo (open-meteo.com)</td><td>Latitude and longitude rounded to about 100 meters, for where the car is and a few points ahead. Nothing about the plate, the car or any account.</td></tr>
+    <tr><td>PC Copy (off until you pair it)</td><td>Your own computer, through the Terminal Móvel app, over the private Tailscale network, with HTTPS</td><td>After each trip: the history (trips, readings with position, warnings, codes, reports, refuelings, maintenance, garage with plate and VIN, schedule and error log). Quick contacts and photos are not sent. It does not go through any developer server. Turn it off in More → Your data, with the option to erase the copy on the computer.</td></tr>
+  </tbody>
+</table>
+
+<h2>8. What the app does not do</h2>
+<ul>
+  <li>It shows no ads and has no third-party advertising, analytics or crash-reporting library.</li>
+  <li>It asks for no account, login or Google account.</li>
+  <li>It does not access the phone's contacts, photos, messages, microphone or camera on its own.</li>
+  <li>It does not use the advertising ID or device identifiers.</li>
+  <li>It does not sell or lend data to anyone. The developer receives no data from the app.</li>
+</ul>
+<p>If the app crashes and you agreed to send diagnostics to Google in Android settings, Google may send the developer a technical crash report (with no car data) through the Google Play Console. This is part of Android, covered by Google's privacy policy, and can be turned off in the phone's settings.</p>
+
+<h2>9. Permissions the app asks for</h2>
+<ul>
+  <li><strong>Nearby devices (Bluetooth):</strong> to talk to the adapter and, when you tap Search, to find wireless adapters (section 4).</li>
+  <li><strong>Notifications:</strong> for the ongoing notification while connected to the car and for important warnings (engine hot, weak battery).</li>
+  <li><strong>Precise location, only while in use (optional):</strong> to measure climbs and descents (section 5).</li>
+  <li><strong>Alarms &amp; reminders, start with the phone (optional):</strong> to reconnect on its own when you start the car, if you keep the connection "always on".</li>
+  <li><strong>Unrestricted battery (optional):</strong> so the phone does not close the app while it waits for the car.</li>
+</ul>
+
+<h2>10. How long</h2>
+<p>Engine readings (with position and altitude) older than 1 year are deleted automatically. Everything else stays until you delete it.</p>
+
+<h2>11. Your rights (LGPD / GDPR)</h2>
+<ul>
+  <li><strong>See and take your data:</strong> use Export data or Backup.</li>
+  <li><strong>Delete everything:</strong> More → Your data → Delete all my data. This erases the database, preferences, photos, generated files and the error log (and the PC Copy, if on). Uninstalling the app also erases everything it stored on the phone. Whatever you already sent elsewhere (WhatsApp, Drive) stays with you.</li>
+  <li>Since the data does not leave the phone, the developer has no copy and cannot view, correct or delete anything for you. Even so, any request sent to the email above will be answered.</li>
+</ul>
+
+<h2>12. Children</h2>
+<p>The app is made for adult drivers and is not directed at anyone under 18.</p>
+
+<h2>13. Changes to this policy</h2>
+<p>If this policy changes, the new version is published on this page with its date, and the app shows the new text and asks for a new acceptance.</p>
+
+<h2>14. Contact</h2>
+<p><a href="https://github.com/CODantas/painel-carro-versoes/issues">github.com/CODantas/painel-carro-versoes/issues</a></p>
+</article>
+
+<footer>Painel do Carro · <a href="#pt">Português</a> · <a href="#en">English</a></footer>
+</main>
+</body>
+</html>
