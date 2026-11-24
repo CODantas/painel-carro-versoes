@@ -64,12 +64,12 @@
 <!-- ============================================================ PORTUGUÊS -->
 <article id="pt" lang="pt-BR">
 <h1>Política de privacidade do Painel do Carro</h1>
-<p class="versao">Versão 5 · em vigor desde 21 de novembro de 2026</p>
+<p class="versao">Versão 7 · em vigor desde 24 de novembro de 2026</p>
 
 <div class="resumo">
-  <p><strong>Resumo:</strong> o Painel do Carro não tem conta, não tem propaganda e não usa nenhum serviço de análise ou de terceiros embutido no app. Tudo o que ele registra fica guardado no seu celular.</p>
-  <p><strong>Versão da Google Play:</strong> usa a internet só para duas opções, explicadas abaixo: a coleta automática (desligada até você ligar) e o mecânico de bolso (só quando você faz uma pergunta). Enquanto essas opções não aparecem no app, ele nem tem permissão de internet. Fora isso, só sai o arquivo que você mesmo escolher enviar.</p>
-  <p><strong>Versão baixada do GitHub:</strong> usa a internet para poucas coisas, todas explicadas abaixo (procurar atualização, preço da Tabela FIPE, altitude do terreno, a Cópia no PC, que só liga se você parear, e as mesmas duas opções da versão da Google Play).</p>
+  <p><strong>Resumo:</strong> o Painel do Carro não tem conta, não tem propaganda e não usa nenhum serviço de análise ou de terceiros embutido no app. Tudo o que ele registra fica guardado no seu celular. Só sai alguma coisa sozinha se você ligar uma das opções abaixo, e dá para desligar e apagar o que foi quando quiser.</p>
+  <p><strong>Versão da Google Play:</strong> usa a internet só para duas opções, explicadas abaixo e desligadas até você ligar: a coleta automática e as estatísticas de uso. Enquanto essas opções não aparecem no app, ele nem tem permissão de internet. Fora isso, só sai o arquivo que você mesmo escolher enviar.</p>
+  <p><strong>Versão baixada do GitHub:</strong> usa a internet para poucas coisas, todas explicadas abaixo (procurar atualização, preço da Tabela FIPE, altitude do terreno, a Cópia no PC, que só liga se você parear, o mecânico de bolso, só quando você faz uma pergunta, e as mesmas duas opções da versão da Google Play).</p>
 </div>
 
 <h2>1. Quem é o responsável</h2>
@@ -102,7 +102,7 @@
 </ul>
 
 <h2>6. O que sai do celular</h2>
-<p>Nestes casos o app monta um arquivo e abre o menu de compartilhar do Android (ou a tela de "salvar como"). É você quem escolhe para onde vai: WhatsApp, e-mail, Drive, Downloads. Fora a coleta automática e o mecânico de bolso, descritos abaixo e desligados até você usar, o app não envia nada sozinho.</p>
+<p>Nestes casos o app monta um arquivo e abre o menu de compartilhar do Android (ou a tela de "salvar como"). É você quem escolhe para onde vai: WhatsApp, e-mail, Drive, Downloads. Fora a coleta automática, as estatísticas de uso e o mecânico de bolso, descritos abaixo e desligados até você usar, o app não envia nada sozinho.</p>
 <ul>
   <li><strong>Exportar dados (ZIP com planilhas):</strong> percursos, leituras, avisos, abastecimentos, manutenções e os carros da garagem (com placa e chassi). Leva a posição e a altitude das leituras, se você permitiu a localização. Os contatos rápidos e a foto do carro não vão.</li>
   <li><strong>Laudo em PDF:</strong> o carro, a quilometragem que você digitou e o que o carro informou.</li>
@@ -114,18 +114,21 @@
 
 <h3>Compras pela Google Play</h3>
 <p>O laudo de compra em PDF (depois do primeiro, que é grátis) e a contribuição "Apoie o app" são pagos pela Google Play. O pagamento é feito na própria Google Play: o app não vê nem guarda cartão, nome ou endereço. No celular fica só quantos créditos de laudo você tem e quais laudos já foram liberados. Os créditos não vão na cópia de segurança.</p>
+<p>Painel Plus (assinatura opcional, mensal ou anual, pela Google Play): o pagamento, a renovação e o cancelamento ficam na própria Google Play. O app confere a compra no celular, sem servidor, e guarda no celular só o estado da assinatura (ativa, pendente, se renova), a data em que ela começou, o identificador da compra dado pela Play e quando isso foi conferido. Nada disso sai do celular.</p>
 <h3>Coleta automática (opcional)</h3>
 <p>Desligada até você ligar em Mais, Seus dados, Ajudar automaticamente. Ligada, depois de um percurso (no máximo uma vez por dia e, se você escolher, só no Wi-Fi), o app manda ao servidor do responsável pelos dados só o que ainda falta para reconhecer carros iguais ao seu: calibração e respostas da central do motor, faixas medidas com o motor quente, consumo e a versão do adaptador, junto com o modelo, o motor e o ano. Nunca vai placa, chassi, apelido, localização, datas, posto, contatos, fotos nem o diário. Cada envio leva um identificador aleatório do celular, que serve só para você apagar tudo o que mandou pelo botão "Apagar o que mandei". Responsável pelos dados: Andrey Lago, desenvolvedor do app (pessoa física). O servidor fica no Cloudflare. Os dados servem só para melhorar o app; não são vendidos nem repassados.</p>
-<h3>Mecânico de bolso (opcional)</h3>
+<h3>Estatísticas de uso (opcional)</h3>
+<p>Desligadas até você ligar em Mais, Seus dados, Ajude a melhorar o app (o app oferece uma vez, no Mais, nunca com o carro conectado). Ligadas, o app conta no celular e manda uma vez por dia, ao mesmo servidor da coleta automática, só contagens de cada dia: quantas vezes cada tela abriu; quantas vezes a oferta do Painel Plus apareceu e foi tocada e quantas compras foram iniciadas, concluídas ou canceladas (sem valor, produto exato nem identificador da compra); falhas de conexão por tipo (sem o endereço do adaptador); se o resumo semanal foi enviado e aberto; erros do app (só a parte do app e o tipo do erro, sem a mensagem); quantos km do mês o app gravou e quantos o carro rodou sem o app, em km inteiros; o tipo do adaptador (Bluetooth clássico ou BLE); a versão do app e do Android, a marca do celular, o idioma, a versão do app (Google Play ou GitHub) e se você assina o Plus. Nunca vai placa, chassi, localização, horários dos percursos, nomes, contatos, fotos, o que você digita nem o endereço do adaptador. Vai com o mesmo identificador aleatório da coleta automática, que serve só para apagar. Desligar para os envios na hora e descarta o que ainda não foi; o botão "Apagar o que mandei" apaga também as estatísticas no servidor. O servidor apaga sozinho as estatísticas com mais de 13 meses. Servem só para melhorar o app (o que é usado, onde a conexão falha, quais erros corrigir primeiro); não são vendidas nem repassadas.</p>
+<h3>Mecânico de bolso (opcional, só na versão do GitHub)</h3>
 <p>Quando você faz uma pergunta ao mecânico de bolso, ela e um resumo técnico do carro (modelo, motor, ano, avisos e leituras do app; nunca placa, chassi, localização ou contatos) vão ao servidor do responsável pelos dados e são processados pelo Claude, da Anthropic, para gerar a resposta, conforme os termos comerciais da Anthropic. O servidor guarda só quantas perguntas o celular fez no dia, para o limite diário; não guarda as perguntas nem as respostas. As respostas são geradas por IA e podem errar.</p>
 <h3>Pacote anônimo para melhorar o app</h3>
 <p>Em Mais, Seus dados, Ajudar a melhorar o app, você pode gerar um pacote anônimo do carro (modelo, motor, ano, calibração da central, adaptador, sinais que o carro informa, consumo e faixas medidas, códigos de falha vistos, sem data) e mandar para quem quiser. Ele não leva placa, chassi, apelido, localização, datas, posto, contatos nem fotos, e só sai do celular se você compartilhar.</p>
 
 <h2>7. Internet</h2>
 <h3>Versão da Google Play</h3>
-<p>Usa a internet só para a coleta automática e o mecânico de bolso (seção 6), e só quando você liga a coleta ou faz uma pergunta. Enquanto essas opções não aparecem no app, ele nem tem permissão de internet. A Tabela FIPE usa só o catálogo de modelos que vem dentro do app, e as atualizações chegam pela própria Google Play.</p>
+<p>Usa a internet só para a coleta automática e as estatísticas de uso (seção 6), e só se você ligar. Enquanto essas opções não aparecem no app, ele nem tem permissão de internet. Mesmo com ela, nada mais usa a rede: a Tabela FIPE usa só o catálogo de modelos que vem dentro do app, as atualizações chegam pela própria Google Play, o mapa do percurso fica sem o fundo de ruas, e não há consulta de altitude, Cópia no PC nem mecânico de bolso nesta versão.</p>
 <h3>Versão baixada do GitHub</h3>
-<p>Usa a internet só para o que está abaixo e, se você usar, para a coleta automática e o mecânico de bolso (seção 6). Em todos os casos, como em qualquer acesso à internet, o serviço consultado vê o endereço de internet (IP) do celular.</p>
+<p>Usa a internet só para o que está abaixo e, se você usar, para a coleta automática, as estatísticas de uso e o mecânico de bolso (seção 6). Em todos os casos, como em qualquer acesso à internet, o serviço consultado vê o endereço de internet (IP) do celular.</p>
 <table>
   <thead><tr><th>Para quê</th><th>Para onde</th><th>O que vai</th></tr></thead>
   <tbody>
@@ -138,11 +141,11 @@
 
 <h2>8. O que o app não faz</h2>
 <ul>
-  <li>Não mostra anúncios e não tem nenhuma biblioteca de propaganda, de análise de uso ou de relatório de falhas de terceiros.</li>
+  <li>Não mostra anúncios e não tem nenhuma biblioteca de propaganda, de análise de uso ou de relatório de falhas de terceiros. As estatísticas de uso (seção 6) são do próprio app, opcionais, e vão só ao servidor do responsável pelos dados.</li>
   <li>Não pede conta, login nem a sua conta Google.</li>
   <li>Não lê os contatos, as fotos, as mensagens, o microfone nem a câmera do celular por conta própria.</li>
   <li>Não usa o ID de publicidade nem identificadores do aparelho.</li>
-  <li>Não vende nem empresta dados a ninguém. O desenvolvedor não recebe dados do app.</li>
+  <li>Não vende nem empresta dados a ninguém. O desenvolvedor só recebe o que a coleta automática e as estatísticas de uso mandam, e só se você ligar.</li>
 </ul>
 <p>Se o app travar e você tiver aceitado mandar diagnósticos ao Google nas configurações do Android, o Google pode enviar ao desenvolvedor um relatório técnico do travamento (sem dados do carro), pelo Google Play Console. Isso é do Android, regido pela política de privacidade do Google, e pode ser desligado nas configurações do celular.</p>
 
@@ -156,13 +159,13 @@
 </ul>
 
 <h2>10. Por quanto tempo</h2>
-<p>As leituras do motor (com a posição e a altitude) com mais de 1 ano são apagadas sozinhas. O resto fica até você apagar.</p>
+<p>As leituras do motor (com a posição e a altitude) com mais de 1 ano são apagadas sozinhas. O resto fica até você apagar. No servidor, as estatísticas de uso com mais de 13 meses são apagadas sozinhas.</p>
 
 <h2>11. Seus direitos (LGPD)</h2>
 <ul>
   <li><strong>Ver e levar seus dados:</strong> use Exportar dados ou Cópia de segurança.</li>
   <li><strong>Apagar tudo:</strong> Mais → Seus dados → Apagar todos os meus dados. Apaga o banco, as preferências, as fotos, os arquivos gerados e o diário (e a Cópia no PC, se estiver ligada). Desinstalar o app também apaga tudo o que ele guardou no celular. O que você já mandou para fora (WhatsApp, Drive) fica com você.</li>
-  <li>Os dados do carro ficam no celular: o desenvolvedor não tem cópia deles e não consegue ver, corrigir ou apagar nada por você. O que a coleta automática mandou você apaga pelo botão "Apagar o que mandei". Qualquer outro pedido é respondido pelo canal de contato acima.</li>
+  <li>Os dados do carro ficam no celular: o desenvolvedor não tem cópia deles e não consegue ver, corrigir ou apagar nada por você. O que a coleta automática e as estatísticas de uso mandaram você apaga pelo botão "Apagar o que mandei" (Mais → Seus dados); sem o app, peça pelo contato abaixo informando o identificador que aparece nesse cartão. Qualquer outro pedido é respondido pelo canal de contato acima.</li>
 </ul>
 
 <h2>12. Crianças</h2>
@@ -178,12 +181,12 @@
 <!-- ============================================================ ENGLISH -->
 <article id="en" lang="en">
 <h1>Painel do Carro privacy policy</h1>
-<p class="versao">Version 5 · effective November 21, 2026</p>
+<p class="versao">Version 7 · effective November 24, 2026</p>
 
 <div class="resumo">
-  <p><strong>Summary:</strong> Painel do Carro has no account, no ads and no built-in analytics or third-party services. Everything it records stays on your phone.</p>
-  <p><strong>Google Play version:</strong> it uses the internet only for two options, explained below: automatic collection (off until you turn it on) and the pocket mechanic (only when you ask a question). Until these options show up in the app, it does not even have internet permission. Other than that, only a file you choose to send yourself leaves the phone.</p>
-  <p><strong>Version downloaded from GitHub:</strong> uses the internet for a few things, all explained below (checking for updates, FIPE price table, terrain elevation, the PC Copy, which only turns on if you pair it, and the same two options as the Google Play version).</p>
+  <p><strong>Summary:</strong> Painel do Carro has no account, no ads and no built-in analytics or third-party services. Everything it records stays on your phone. Something leaves on its own only if you turn on one of the options below, and you can turn it off and delete what was sent at any time.</p>
+  <p><strong>Google Play version:</strong> it uses the internet only for two options, explained below and off until you turn them on: automatic collection and usage statistics. Until these options show up in the app, it does not even have internet permission. Other than that, only a file you choose to send yourself leaves the phone.</p>
+  <p><strong>Version downloaded from GitHub:</strong> uses the internet for a few things, all explained below (checking for updates, FIPE price table, terrain elevation, the PC Copy, which only turns on if you pair it, the pocket mechanic, only when you ask a question, and the same two options as the Google Play version).</p>
 </div>
 
 <h2>1. Who is responsible</h2>
@@ -216,7 +219,7 @@
 </ul>
 
 <h2>6. What leaves the phone</h2>
-<p>In these cases the app builds a file and opens Android's share menu (or a "save as" screen). You choose where it goes: WhatsApp, email, Drive, Downloads. Apart from automatic collection and the pocket mechanic, described below and off until you use them, the app sends nothing on its own.</p>
+<p>In these cases the app builds a file and opens Android's share menu (or a "save as" screen). You choose where it goes: WhatsApp, email, Drive, Downloads. Apart from automatic collection, usage statistics and the pocket mechanic, described below and off until you use them, the app sends nothing on its own.</p>
 <ul>
   <li><strong>Export data (ZIP of spreadsheets):</strong> trips, readings, warnings, refuelings, maintenance and the garage cars (with plate and VIN). It includes the position and altitude of readings if you allowed location. Quick contacts and the car photo are not included.</li>
   <li><strong>PDF report:</strong> the car, the mileage you typed and what the car reported.</li>
@@ -228,18 +231,21 @@
 
 <h3>Purchases through Google Play</h3>
 <p>The purchase report in PDF (after the first, which is free) and the "Support the app" contribution are paid through Google Play. Payment happens in Google Play itself: the app never sees or stores your card, name or address. The phone only keeps how many report credits you have and which reports were already unlocked. Credits are not included in the backup.</p>
+<p>Painel Plus (optional subscription, monthly or yearly, through Google Play): payment, renewal and cancellation stay in Google Play itself. The app checks the purchase on the phone, with no server, and only keeps on the phone the subscription status (active, pending, renewing), the date it started, the purchase identifier given by Google Play and when that was checked. None of it leaves the phone.</p>
 <h3>Automatic collection (optional)</h3>
 <p>Off until you turn it on in More, Your data, Help automatically. When on, after a trip (at most once a day and, if you choose, only on Wi-Fi), the app sends to the data controller's server only what is still missing to recognize cars like yours: engine ECU calibration and responses, ranges measured with a warm engine, consumption and the adapter version, along with model, engine and year. Plate, VIN, nickname, location, dates, gas station, contacts, photos and the app log are never sent. Each submission carries a random phone identifier used only so you can delete everything you sent with the "Delete what I sent" button. Data controller: Andrey Lago, the app's developer (individual). The server runs on Cloudflare. The data is used only to improve the app; it is not sold or shared.</p>
-<h3>Pocket mechanic (optional)</h3>
+<h3>Usage statistics (optional)</h3>
+<p>Off until you turn them on in More, Your data, Help improve the app (the app offers this once, in More, never while connected to the car). When on, the app counts on the phone and sends once a day, to the same server as automatic collection, only each day's counts: how many times each screen opened; how many times the Painel Plus offer was shown and tapped and how many purchases were started, completed or canceled (no amount, exact product or purchase identifier); connection failures by type (without the adapter's address); whether the weekly summary was sent and opened; app errors (only the part of the app and the error type, without the message); how many of the month's km the app recorded and how many the car drove without the app, in whole km; the adapter type (classic Bluetooth or BLE); the app and Android versions, the phone brand, the language, the app edition (Google Play or GitHub) and whether you subscribe to Plus. Plate, VIN, location, trip times, names, contacts, photos, anything you type and the adapter's address are never sent. It carries the same random identifier as automatic collection, used only for deletion. Turning it off stops uploads right away and discards what was not sent yet; the "Delete what I sent" button also deletes the statistics on the server. The server automatically deletes statistics older than 13 months. They are used only to improve the app (what is used, where the connection fails, which errors to fix first); they are not sold or shared.</p>
+<h3>Pocket mechanic (optional, GitHub version only)</h3>
 <p>When you ask the pocket mechanic a question, the question and a technical summary of the car (model, engine, year, the app's warnings and readings; never plate, VIN, location or contacts) go to the data controller's server and are processed by Claude, from Anthropic, to generate the answer, under Anthropic's commercial terms. The server keeps only how many questions the phone asked that day, for the daily limit; it does not keep the questions or the answers. Answers are AI-generated and may be wrong.</p>
 <h3>Anonymous package to improve the app</h3>
 <p>In More, Your data, Help improve the app, you can create an anonymous package of the car (model, engine, year, ECU calibration, adapter, signals the car reports, measured consumption and ranges, fault codes seen, without dates) and send it to whoever you want. It does not include plate, VIN, nickname, location, dates, gas station, contacts or photos, and only leaves the phone if you share it.</p>
 
 <h2>7. Internet</h2>
 <h3>Google Play version</h3>
-<p>It uses the internet only for automatic collection and the pocket mechanic (section 6), and only when you turn collection on or ask a question. Until these options show up in the app, it does not even have internet permission. The FIPE table uses only the model catalog shipped inside the app, and updates come through Google Play itself.</p>
+<p>It uses the internet only for automatic collection and usage statistics (section 6), and only if you turn them on. Until these options show up in the app, it does not even have internet permission. Even with it, nothing else uses the network: the FIPE table uses only the model catalog shipped inside the app, updates come through Google Play itself, the trip map has no street background, and there is no elevation lookup, PC Copy or pocket mechanic in this version.</p>
 <h3>Version downloaded from GitHub</h3>
-<p>It uses the internet only for what is listed below and, if you use them, for automatic collection and the pocket mechanic (section 6). In every case, as with any internet access, the service contacted sees the phone's internet (IP) address.</p>
+<p>It uses the internet only for what is listed below and, if you use them, for automatic collection, usage statistics and the pocket mechanic (section 6). In every case, as with any internet access, the service contacted sees the phone's internet (IP) address.</p>
 <table>
   <thead><tr><th>What for</th><th>Where to</th><th>What is sent</th></tr></thead>
   <tbody>
@@ -252,11 +258,11 @@
 
 <h2>8. What the app does not do</h2>
 <ul>
-  <li>It shows no ads and has no third-party advertising, analytics or crash-reporting library.</li>
+  <li>It shows no ads and has no third-party advertising, analytics or crash-reporting library. The usage statistics (section 6) are the app's own, optional, and go only to the data controller's server.</li>
   <li>It asks for no account, login or Google account.</li>
   <li>It does not access the phone's contacts, photos, messages, microphone or camera on its own.</li>
   <li>It does not use the advertising ID or device identifiers.</li>
-  <li>It does not sell or lend data to anyone. The developer receives no data from the app.</li>
+  <li>It does not sell or lend data to anyone. The developer only receives what automatic collection and usage statistics send, and only if you turn them on.</li>
 </ul>
 <p>If the app crashes and you agreed to send diagnostics to Google in Android settings, Google may send the developer a technical crash report (with no car data) through the Google Play Console. This is part of Android, covered by Google's privacy policy, and can be turned off in the phone's settings.</p>
 
@@ -270,13 +276,13 @@
 </ul>
 
 <h2>10. How long</h2>
-<p>Engine readings (with position and altitude) older than 1 year are deleted automatically. Everything else stays until you delete it.</p>
+<p>Engine readings (with position and altitude) older than 1 year are deleted automatically. Everything else stays until you delete it. On the server, usage statistics older than 13 months are deleted automatically.</p>
 
 <h2>11. Your rights (LGPD / GDPR)</h2>
 <ul>
   <li><strong>See and take your data:</strong> use Export data or Backup.</li>
   <li><strong>Delete everything:</strong> More → Your data → Delete all my data. This erases the database, preferences, photos, generated files and the error log (and the PC Copy, if on). Uninstalling the app also erases everything it stored on the phone. Whatever you already sent elsewhere (WhatsApp, Drive) stays with you.</li>
-  <li>The car's data stays on the phone: the developer has no copy and cannot view, correct or delete anything for you. What automatic collection sent can be deleted with the "Delete what I sent" button. Any other request is answered through the contact channel above.</li>
+  <li>The car's data stays on the phone: the developer has no copy and cannot view, correct or delete anything for you. What automatic collection and usage statistics sent can be deleted with the "Delete what I sent" button (More → Your data); without the app, ask through the contact below, giving the identifier shown on that card. Any other request is answered through the contact channel above.</li>
 </ul>
 
 <h2>12. Children</h2>
